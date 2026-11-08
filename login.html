@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-SKL Santri - Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: #E6F2FF;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .login-card {
+            background-color: #E6F2FF;
+            width: 100%;
+            max-width: 440px;
+            padding: 40px 36px;
+            border-radius: 28px;
+            border: 2px solid #0056B3;
+            box-shadow: 0 10px 30px rgba(0, 86, 179, 0.08);
+            text-align: center;
+        }
+
+        .logo-placeholder {
+            font-size: 20px;
+            font-weight: 800;
+            color: #0056B3;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .app-title {
+            font-size: 26px;
+            font-weight: 800;
+            color: #0056B3;
+            margin-bottom: 6px;
+        }
+
+        .app-subtitle {
+            font-size: 13px;
+            color: #5A738E;
+            font-weight: 500;
+            margin-bottom: 32px;
+        }
+
+        .form-group {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 16px;
+            font-weight: 700;
+            color: #0056B3;
+            margin-bottom: 8px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 18px;
+            font-size: 15px;
+            border-radius: 50px;
+            border: 1.5px solid #3399FF;
+            background-color: #F4F9FF;
+            color: #0F172A;
+            outline: none;
+            transition: all 0.25s ease;
+        }
+
+        .form-control:focus {
+            background-color: #FFFFFF;
+            border-color: #0056B3;
+            box-shadow: 0 0 0 4px rgba(51, 153, 255, 0.2);
+        }
+
+        .btn-group {
+            margin-top: 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn-masuk {
+            width: 100%;
+            padding: 12px;
+            border-radius: 50px;
+            border: none;
+            background-color: #1E90FF;
+            color: #FFFFFF;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 12px rgba(30, 144, 255, 0.3);
+        }
+
+        .btn-masuk:hover {
+            background-color: #0077EE;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(30, 144, 255, 0.4);
+        }
+
+        .btn-forgot {
+            width: 100%;
+            padding: 11px;
+            border-radius: 50px;
+            border: 1.5px solid #3399FF;
+            background-color: transparent;
+            color: #0056B3;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            display: block;
+            transition: all 0.25s ease;
+        }
+
+        .btn-forgot:hover {
+            background-color: rgba(51, 153, 255, 0.1);
+            border-color: #0056B3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <div class="logo-placeholder">LOGO</div>
+        <h1 class="app-title">Web-SKL Santri</h1>
+        <p class="app-subtitle">Sistem Monitoring Standar Kompetensi Lulusan</p>
+
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="form-control" placeholder="" required>
+            </div>
+
+            <div class="btn-group">
+                <button type="submit" class="btn-masuk">Masuk</button>
+                <a href="#" class="btn-forgot">Forgot Password?</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
